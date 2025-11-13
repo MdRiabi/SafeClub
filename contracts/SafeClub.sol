@@ -90,7 +90,7 @@ contract SafeClub is ReentrancyGuard {
     uint256 proposalId = proposals.length;
     proposals.push(); // Crée un nouvel élément vide
 
-    Proposal storage newProposal = proposals[proposalId]; // ✅ CORRIGÉéééé
+    Proposal storage newProposal = proposals[proposalId]; 
     newProposal.description = _description;
     newProposal.recipient = _recipient;
     newProposal.amount = _amount;
